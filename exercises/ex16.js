@@ -35,3 +35,14 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+
+function buildTriangle(width) {
+    var triangle = "";
+    for (var i = 1; i <= width; i++) {
+        triangle += makeLine(i);
+    }
+    return triangle;
+}
+
+console.log(buildTriangle(10));
+
